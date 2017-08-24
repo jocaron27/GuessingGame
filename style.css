@@ -1,5 +1,6 @@
 /* ----------- Fonts --------------- */
-@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaijaan');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Walter+Turncoat');
 
 
 /* ----------- General --------------- */
@@ -8,15 +9,32 @@
     text-align: center;
 }
 
-h1, h2, h3 {
-    font-family: 'Baloo Bhaijaan', cursive;
-}
-
-
 /* ----------- Header -------------- */
+
+#headers {
+    background-color: #090B1A;
+    padding-bottom: 20px;
+    color: white;
+}
 
 #headers h1 {
     padding-top: 40px;
+    font-family: 'Walter Turncoat', cursive;
+    font-size: 44px;
+    margin-bottom: 5px;
+}
+
+#headers p {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ----------- Input --------------- */
+
+#main {
+    background-image: url('stars.jpg');
+    padding-bottom: 100px;
 }
 
 /* ----------- Input --------------- */
@@ -25,21 +43,39 @@ h1, h2, h3 {
     width: 200px;
     height: 200px;
     border-radius: 100%;
-    background-color: pink;
+    background-color: #F4E80A;
+    border: 2px solid black;
+    box-shadow: 20px 20px 20px black;
+    font-size: 30px;
 }
 
 #input-parent {
-    padding: 50px 0px 50px 0px;
+    padding: 25px 0px 0px 0px;
+}
+
+#input-parent input:hover {
+    background-color: #4A4AC8;
+}
+
+input[type="text"].guess::-webkit-input-placeholder {
+    font-size: 200px;
+    margin: auto;
+    position: relative;
+    top: 30%;
+    color: white;
+    text-shadow: 1px 2px 2px black;
 }
 
 /* ----------- Guesses --------------- */
 
 #guesses li {
     display: inline-block;
-    border: 1px solid black;
+    border: 2px solid black;
     width: 40px;
     height: 40px;
     margin: 7px;
+    border-radius: 17%;
+    background-color: rgba(237, 244, 244, 0.3)
 }
 
 #guesses li p {
@@ -59,15 +95,17 @@ ul {
     width:58px;
     height: 58px;
     border-radius: 100%;
-    background-color: gray;
+    background-color: #CB2B2B;
     position: relative;
     margin: auto;
     bottom: 65px;
     left: 54px;
+    margin-bottom: -60px;
+    box-shadow: 10px 10px 10px black;
 }
 
 #submit-button:hover {
-    background-color: rgb(123, 178, 134);
+    background-color: #34a853;
     color: white;
     cursor: pointer;
     left: 60px;
@@ -75,7 +113,51 @@ ul {
 
 #submit-button h4 {
     position: relative;
-    top: 30%;
+    top: 35%;
+}
+
+#menu-btns {
+    position: relative;
+    margin: auto;
+}
+
+#reset-button {
+    background-color: lightblue;
+    position: relative;
+    display: inline-block;
+    padding: 0px 20px;
+    border-radius: 10%;
+    margin-right: 10px;
+}
+
+#reset-button:hover {
+    background-color: #85ACBA;
+    cursor: pointer;
+}
+
+#reset-button p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px -5px;
+}
+
+#hint-button {
+    background-color: lightblue;
+    position: relative;
+    display: inline-block;
+    padding: 0px 20px;
+    border-radius: 10%;
+}
+
+#hint-button:hover {
+    background-color: #85ACBA;
+    cursor: pointer;
+}
+
+#hint-button p {
+    font-size: 14px;
+    font-weight: 500;
+    margin: 5px -5px;
 }
 
 
